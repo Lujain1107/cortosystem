@@ -1,0 +1,19 @@
+<h2>Add To Cart</h2>
+
+<form method="POST" action="http://localhost/Corto_system/controllers/cartcontroller.php?action=add">
+    <input name="item_id" placeholder="Item ID"><br>
+    <input name="quantity" placeholder="Quantity"><br>
+    <button type="submit">Add</button>
+</form>
+
+
+<h2>View Cart</h2>
+<a href="http://localhost/Corto_system/controllers/cartcontroller.php?action=view">View Cart</a>
+
+
+<h2>Remove Item</h2>
+<form method="GET" action="http://localhost/Corto_system/controllers/cartcontroller.php">
+    <input type="hidden" name="action" value="remove">
+    <input name="item_id" placeholder="Item ID"><br>
+    <button type="submit">Remove</button>
+</form>
